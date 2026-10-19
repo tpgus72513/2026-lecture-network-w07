@@ -1,0 +1,27 @@
+﻿# arp -a before clearing  2026-10-19 22:18:20.544
+
+Interface: 192.168.219.108 --- 0x7
+  Internet Address      Physical Address      Type
+  192.168.219.1         18-c5-01-00-00-02     dynamic   
+  192.168.219.105       9c-83-06-00-00-03     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 192.168.56.1 --- 0x15
+  Internet Address      Physical Address      Type
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 172.26.128.1 --- 0x40
+  Internet Address      Physical Address      Type
+  172.26.137.110        00-15-5d-00-00-04     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 100.112.140.37 --- 0x47
+  Internet Address      Physical Address      Type
+  224.0.0.251                                 static    
+  239.255.255.250                             static    

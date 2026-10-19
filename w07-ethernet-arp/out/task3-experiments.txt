@@ -1,0 +1,25 @@
+  baseline                 wasted  323,380  missed 0  cut   0%
+  LRU                      wasted  218,500  missed 0  cut  32%
+  LFU src                  wasted  160,310  missed 0  cut  50%
+  LFU src+dst              wasted  158,056  missed 0  cut  51%
+  LFU+admit src            wasted  159,206  missed 0  cut  51%
+  LFU+admit s+d            wasted  156,998  missed 0  cut  51%
+  LFU+admit s+d halve10k   wasted  158,240  missed 0  cut  51%
+  LRU+doorkeeper           wasted  183,310  missed 0  cut  43%
+  sketch256 LFU            wasted  220,524  missed 0  cut  32%
+  sketch256 LFU+admit      wasted  218,546  missed 0  cut  32%
+  sketch64 LFU+admit       wasted  464,140  missed 0  cut -44%
+  bounded 128              wasted  156,998  missed 0  cut  51%
+  bounded 256              wasted  156,998  missed 0  cut  51%
+  bounded 256 halve10k     wasted  158,240  missed 0  cut  51%
+  oracle top-64 (illegal)  wasted  154,560  missed 0  cut  52%
+
+  # ablation of the submitted YourSwitch (same trace)
+  YourSwitch (LFU src+dst, admission, 128 counters, halve/1000 s)  wasted 158,056
+  - admission off                                                  wasted 158,930  (+874)
+  - halving off                                                    wasted 156,998  (-1,058)
+  learning declined 3,552 times (newcomer no busier than coldest entry)
+
+  # R6 attack: one fake source MAC per real frame, all on port 0
+  baseline    wasted clean  323,380  under attack  763,186  (2.36x)
+  YourSwitch  wasted clean  158,056  under attack  162,012  (1.03x)

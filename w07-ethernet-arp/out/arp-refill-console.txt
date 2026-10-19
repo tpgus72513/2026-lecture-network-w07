@@ -1,0 +1,13 @@
+﻿# ping -n 3 192.168.219.1  2026-10-19 22:18:27.343
+
+Pinging 192.168.219.1 with 32 bytes of data:
+Reply from 192.168.219.1: bytes=32 time=9ms TTL=64
+Reply from 192.168.219.1: bytes=32 time=14ms TTL=64
+Reply from 192.168.219.1: bytes=32 time=10ms TTL=64
+
+Ping statistics for 192.168.219.1:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 9ms, Maximum = 14ms, Average = 11ms
+# curl https://www.korea.ac.kr  2026-10-19 22:18:29.416
+http 200 remote 163.152.6.10
